@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  	<meta name="description" content="">
-  	<meta name="author" content="">
-	<title>Orders</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Admin login</title>
 	<!-- Bootstrap core CSS -->
   	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,9 +15,9 @@
 </head>
 
 <body>
- <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="container">
       <a class="navbar-brand" href="#">Welcome</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,34 +44,33 @@
         </ul>
       </div>
     </div>
-  </nav>
+</nav>
+<h2 id="log">Login</h2>
 
-	<div class="container">
-    <h2>Placing Order</h2>
-		
-	 	<form action="">
-	 		<div class="form-row">
+<form action="" method="">
 
-	 			<div class="form-group col-6">
-		    	<label for="custname">Name:</label>
-		      	<input type="text" class="form-control" id="custname" placeholder="Enter Name" name="custName">
+  <!-- <div class="container" class="form-group col-6"> -->
+  <div class ="form-group col-3">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
 
-		      	<label for="custemail">Email:</label>
-		        <input type="email" class="form-control" id="custemail" placeholder="Enter email" name="custEmail">
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
 
-		        <label for="custPhone">Phone Number:</label>
-		        <input type="tel" class="form-control" id="custphone" placeholder="Enter Phone number" name="custPhone">
-		      
-		        <label for="date">Pick up Date:</label>
-		        <input type="date" class="form-control" id="pickdate" name="PickDate">
-	    		</div>
-	 		</div>
+    <br>
+    <a href="adminpage.php" type="submit">Login</a>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
 
-	    	<button name="confirmation" type="submit" class="btn btn-primary">Comfirm order</button>
-	  	</form>
-	</div>
+    
+  </div>
+
+ <!--  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div> -->
+</form>
 
 </body>
 </html>
-
-

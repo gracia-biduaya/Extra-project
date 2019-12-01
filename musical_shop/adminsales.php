@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cart</title>
+	<title>Admin interface</title>
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  	<meta name="description" content="">
-  	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
   	<!-- Bootstrap core CSS -->
   	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -68,35 +68,27 @@ tr:nth-child(even) {
       </div>
     </div>
 </nav>
-	<h2>Your Cart</h2>
+	<h2>Sales made</h2>
 
 <table>
   <tr>
-    <th>Product</th>
-    <th>Quantity</th>
-	<th>Unit Price</th>
-	<th>Remove</th>
-  </tr>
+    <th>Id</th>
+    <th>product</th>
+	<th>Quantity</th>
+	<th>Unit price</th>
 
   <tr>
-    <td>Guitar</td>
-    <td>
-		<select class="form-control">
-			<option>1</option>
-			<option>2</option>	
-			<option>3</option>	
-			<option>4</option>	
-		</select>
-	</td>
-	<td>780</td>
-	<td><input type="button" id="remove" value="remove" class="btn btn-danger"> </td>
+    <td>1</td>
+  <td> Guitar</td>
+  <td> 2</td>
+  <td>1560</td>
   </tr>
 </table>
 
 <span>
   <br>
-  <button type="submit" name="edit" id="editit" style="padding: 8px">Edit order</button>
-  <a href="orders.php" type="submit" name="Comfirm" id="comfimit" style="padding: 8px;position: absolute;right: 10px">Comfirm Order</a>
+  <a href="adminsert.php" type="submit" name="Adds" id="adds" style="padding: 8px;position: absolute;right: 10px">Add Sales</a>
+  <a href="adminpage.php" type="submit" name="Rtrn" id="rtrn" style="padding: 8px;">Return</a>
 </span>
 
 </body>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<meta name="description" content="">
   	<meta name="author" content="">
-	<title>Orders</title>
+
+	<title>Admin Sales</title>
 	<!-- Bootstrap core CSS -->
   	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,8 +16,8 @@
 </head>
 
 <body>
- <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Welcome</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +29,6 @@
             <a class="nav-link" href="index.php">Home
               <span class="sr-only">(current)</span>
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#index.php">Product</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact_us.php">Contact</a>
@@ -44,31 +43,40 @@
       </div>
     </div>
   </nav>
-
-	<div class="container">
-    <h2>Placing Order</h2>
+  <div class="container">
+    <h2>Adding Sales</h2>
 		
 	 	<form action="">
 	 		<div class="form-row">
 
 	 			<div class="form-group col-6">
-		    	<label for="custname">Name:</label>
-		      	<input type="text" class="form-control" id="custname" placeholder="Enter Name" name="custName">
+		    	<label for="article name">Product Name:</label>
+		      	<input type="text" class="form-control" id="articlname" placeholder="Enter Name" name="articlName">
 
-		      	<label for="custemail">Email:</label>
-		        <input type="email" class="form-control" id="custemail" placeholder="Enter email" name="custEmail">
+		      	<label for="article quantity">Quantity:</label>
+		        <!-- <input type="number" class="form-control" id="articlqty" placeholder="Enter Quantity" name="articlQty" > -->
+		        <td >
+		        	<select class="form-control" id="articlqty" name="articlQty">
+						<option>1</option>
+						<option>2</option>	
+						<option>3</option>	
+						<option>4</option>	
+					</select>
+				</td>
 
-		        <label for="custPhone">Phone Number:</label>
-		        <input type="tel" class="form-control" id="custphone" placeholder="Enter Phone number" name="custPhone">
-		      
-		        <label for="date">Pick up Date:</label>
-		        <input type="date" class="form-control" id="pickdate" name="PickDate">
-	    		</div>
+		        <label for="article price">Price:</label>
+		        <input type="number" class="form-control" id="articlprice" placeholder="Enter Price" name="articlPrice">
+
+		    	</div>
 	 		</div>
-
-	    	<button name="confirmation" type="submit" class="btn btn-primary">Comfirm order</button>
+	 		<a href="" name="submission" type="submit" class="btn btn-primary">Submit Sale</a>
+      <br>
+      <br>
+      <a href="adminpage.php" type="submit" name="Comfirm" id="comfimit" style="padding: 8px;">Return</a>
+          	
 	  	</form>
 	</div>
+
 
 </body>
 </html>
